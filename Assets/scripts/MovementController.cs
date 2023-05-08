@@ -8,8 +8,8 @@ public class MovementController : MonoBehaviour
     public float jumpForce = 5f; // fuerza del salto del personaje
 
     private Rigidbody2D rb;
-    private Animator animator; // referencia al componente Animator
     private bool isGrounded = true; // verifica si el personaje está en el suelo
+    private Animator animator;
 
     void Start()
     {
@@ -24,14 +24,25 @@ public class MovementController : MonoBehaviour
         // actualizamos la posición del transform del personaje
         transform.position += Vector3.right * horizontalMovement * speed * Time.deltaTime;
 
-        // establecer el valor del parámetro isRunning en función de si el personaje está moviéndose o no
-        animator.SetBool("isRunning", horizontalMovement != 0);
+        if (horizontalMovement != 0)
+        {
+            animator.SetBool("isRunning", true); // establecemos el parámetro "isRunning" a true si el personaje se está moviendo
+            transform.localScale = new Vector3(horizontalMovement < 0 ? -6 : 6, 6, 1); // voltear el personaje según el eje X
+        }
+        else
+        {
+            animator.SetBool("isRunning", false); // establecemos el parámetro "isRunning" a false si el personaje no se está moviendo
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isGrounded = false;
-            animator.SetBool("isGrounded", false); // establecer el valor del parámetro isGrounded en false
+        }
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            animator.SetBool("isAttacking", true); // establecemos el parámetro "isAttacking" a true si la tecla "z" es presionada
         }
     }
 
@@ -40,7 +51,7 @@ public class MovementController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-            animator.SetBool("isGrounded", true); // establecer el valor del parámetro isGrounded en true
+            animator.SetBool("isGrounded", true); // establecemos el parámetro "isGrounded" a true si el personaje está en el suelo
         }
     }
 
@@ -48,8 +59,9 @@ public class MovementController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            isGrounded = false;
-            animator.SetBool("isGrounded", false); // establecer el valor del parámetro isGrounded en false
+            animator.SetBool("isGrounded", false); // establecemos el parámetro "isGrounded" a false si el personaje no está en el suelo
         }
     }
 }
+
+
