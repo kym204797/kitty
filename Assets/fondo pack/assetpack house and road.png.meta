@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,7 +139,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: assetpack house and road_0
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 1927
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980322c4ddb35374ea8d8fea2cf62aff
+      internalID: -426741204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 708
+        width: 365
+        height: 1156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3b5e0b6ec33cb458a5f3cea750a78c
+      internalID: 2100226601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 714
+        width: 1826
+        height: 1150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3681d6c439a984db7e1805228943f2
+      internalID: -1563206140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_3
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 1508
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b0ef3c7ce0a3d459a5aef72a72156f
+      internalID: -817929292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_4
+      rect:
+        serializedVersion: 2
+        x: 2440
+        y: 696
+        width: 1838
+        height: 1220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d67031ee79056a4fb8d51712db054c2
+      internalID: -1300273209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_5
+      rect:
+        serializedVersion: 2
+        x: 4243
+        y: 1452
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663f8c1c37bdfd14eb9b3a27ec918e7d
+      internalID: 1311620501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_6
+      rect:
+        serializedVersion: 2
+        x: 4273
+        y: 1421
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124f8f6717556eb4ea5fc86fd7a60b34
+      internalID: -94628249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_7
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 681
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067a2933372bfbf42942ec0cc1ea4395
+      internalID: -653215043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_8
+      rect:
+        serializedVersion: 2
+        x: 3398
+        y: 657
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caca0501cc75a154ab19aee15595af95
+      internalID: -383273001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: assetpack house and road_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 227
+        width: 2655
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f78d9aab505a342a56f1b6296cd5cd
+      internalID: 859223502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -150,7 +360,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      assetpack house and road_3: -817929292
+      assetpack house and road_7: -653215043
+      assetpack house and road_4: -1300273209
+      assetpack house and road_5: 1311620501
+      assetpack house and road_0: -426741204
+      assetpack house and road_6: -94628249
+      assetpack house and road_2: -1563206140
+      assetpack house and road_1: 2100226601
+      assetpack house and road_9: 859223502
+      assetpack house and road_8: -383273001
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -6,10 +6,15 @@ public class MovementController : MonoBehaviour
 {
     public float speed = 5f; // velocidad de movimiento del personaje
     public float jumpForce = 5f; // fuerza del salto del personaje
+    public float attackCooldown = 0.6f; // tiempo de enfriamiento del ataque
+
 
     private Rigidbody2D rb;
     private bool isGrounded = true; // verifica si el personaje está en el suelo
     private Animator animator;
+    private bool isAttacking = false; // verifica si el personaje está atacando
+    private float attackTimer = 0f; // temporizador de enfriamiento del ataque
+
 
     void Start()
     {
@@ -40,9 +45,22 @@ public class MovementController : MonoBehaviour
             isGrounded = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && !isAttacking)
         {
             animator.SetBool("isAttacking", true); // establecemos el parámetro "isAttacking" a true si la tecla "z" es presionada
+            isAttacking = true; // establecemos el personaje como atacando
+            attackTimer = attackCooldown; // reiniciamos el temporizador de enfriamiento del ataque
+        }
+
+        // si el personaje está atacando, comienza el temporizador de enfriamiento del ataque
+        if (isAttacking)
+        {
+            attackTimer -= Time.deltaTime;
+            if (attackTimer <= 0f)
+            {
+                animator.SetBool("isAttacking", false); // establecemos el parámetro "isAttacking" a false después de que se haya completado el ataque
+                isAttacking = false; // establecemos el personaje como no atacando
+            }
         }
     }
 
@@ -63,5 +81,3 @@ public class MovementController : MonoBehaviour
         }
     }
 }
-
-
