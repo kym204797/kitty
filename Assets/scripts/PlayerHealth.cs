@@ -48,7 +48,8 @@ public class PlayerHealth : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")) // si chocamos con un objeto con la etiqueta "Enemy"
+        
+        if (collision.gameObject.CompareTag("Enemy") && collision.otherCollider.gameObject.CompareTag("Player")) // si chocamos con un objeto con la etiqueta "Enemy"
         {
             TakeDamage(10); // llamamos a la función TakeDamage con un valor de daño de 10
         }
