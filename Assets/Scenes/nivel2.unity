@@ -6606,7 +6606,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1570416665, guid: 3d64477791f029b48be27adae74df1fe, type: 3}
   m_Color: {r: 0.37166253, g: 0.40231872, b: 0.9056604, a: 1}
   m_FlipX: 0
@@ -7947,7 +7947,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 30
   m_Sprite: {fileID: 1029108357, guid: b7c7d9090258c904ab9d43487e506940, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9071,6 +9071,10 @@ PrefabInstance:
     - target: {fileID: 1210830652999088066, guid: 55f00d11a642d774e87efc1bb38db307, type: 3}
       propertyPath: m_Name
       value: Hud
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210830652999088066, guid: 55f00d11a642d774e87efc1bb38db307, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6836201768546386848, guid: 55f00d11a642d774e87efc1bb38db307, type: 3}
       propertyPath: m_fontColor.b
